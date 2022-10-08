@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
 import Navbarrr from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -106,6 +107,7 @@ const Read = () => {
                 </Table.Body>
             </Table>
             <ToastContainer />
+            <Footer />
         </div >
 
     )

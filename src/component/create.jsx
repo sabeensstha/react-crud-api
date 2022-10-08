@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbarrr from './Navbar';
+import Footer from './Footer';
 
 // import { db } from '../firebas-config';
 // import { collection, getDocs, addDoc } from 'firebase/firestore/lite';
@@ -49,12 +50,12 @@ export default function Create() {
     // })
 
     return (
-        <div>
+        <div >
             <Navbarrr />
-            <Form className="create-form">
-                <p>First Name</p>
+            <Form className="create-form" style={{paddingLeft:"500px"}}>
+                <p style={{paddingLeft:"70px"}}>First Name</p>
                 <input onChange={(e) => { setFirstName(e.target.value) }} placeholder='First Name' />
-                <p>Last Name</p>
+                <p style={{paddingLeft:"70px"}}>Last Name</p>
                 <input
                     onChange={(e) => { setLastName(e.target.value) }}
                     placeholder='Last Name' />
@@ -63,6 +64,8 @@ export default function Create() {
                 <Button onClick={postData} type='submit'>Submit</Button>
                 <ToastContainer />
             </Form>
+            
+            <Footer />
         </div>
     )
 }

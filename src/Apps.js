@@ -6,6 +6,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NewHome from "./NewHome";
 
+const myAwesomeArray = [5, 4, 3, 2, 1]
+
+console.log(myAwesomeArray.map(x => x * x ));
+
 function App() {
   return (
     <BrowserRouter>
